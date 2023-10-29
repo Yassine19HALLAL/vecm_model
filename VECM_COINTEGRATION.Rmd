@@ -1,0 +1,30 @@
+---
+title: "Cointegration & VECM model"
+author: "Yassine HALLAL"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Libraries
+
+```{r}
+library(readxl)
+```
+
+
+## Importing data
+
+```{r}
+data <- read_xlsx(path = "C:/Users/Yassine/Documents/vecm_data.xlsx")
+head(data)
+```
+
+## Plot
+
+```{r}
+plot(data$Date, data$GDP, type = "l")
+```
+
